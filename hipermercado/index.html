@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Primo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">🛒 Hipermercado Primo</div>
+        <div class="cart-icon" id="cart-toggle">
+            📦 Carrinho (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Lista de Produtos -->
+        <section class="products-grid">
+            
+            <!-- Produto 1 -->
+            <div class="product-card" data-id="1" data-name="Maçã Gala (Kg)" data-price="1.99">
+                <div class="product-img">🍎</div>
+                <h3>Maçã Gala (Kg)</h3>
+                <p class="price">1,99 €</p>
+                <button class="add-to-cart">Adicionar</button>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card" data-id="2" data-name="Leite Meio Gordo" data-price="0.85">
+                <div class="product-img">🥛</div>
+                <h3>Leite Meio Gordo</h3>
+                <p class="price">0,85 €</p>
+                <button class="add-to-cart">Adicionar</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card" data-id="3" data-name="Pão de Forma" data-price="1.49">
+                <div class="product-img">🍞</div>
+                <h3>Pão de Forma</h3>
+                <p class="price">1,49 €</p>
+                <button class="add-to-cart">Adicionar</button>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="product-card" data-id="4" data-name="Azeite Virgem Extra" data-price="6.95">
+                <div class="product-img">🫒</div>
+                <h3>Azeite Virgem Extra</h3>
+                <p class="price">6,95 €</p>
+                <button class="add-to-cart">Adicionar</button>
+            </div>
+
+        </section>
+
+        <!-- Barra Lateral do Carrinho -->
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <h2>Teu Carrinho</h2>
+            <div id="cart-items">
+                <!-- Os itens adicionados vão aparecer aqui dinamicamente -->
+                <p class="empty-msg">O carrinho está vazio.</p>
+            </div>
+            <div class="cart-total">
+                <strong>Total: <span id="cart-total-val">0,00</span> €</strong>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
